@@ -19,23 +19,9 @@ currents = {
     "nextExpected": "",
 }
 
-# currentsExample = {
-#     "1005 - Sant Gadge Baba Amravati University,Amravati": {
-#         "100552410 - Paper and Pulp Technology": {
-#             "Home University Seats Allotted to Home University Candidates": {
-#                 "LOPENH": [29.4111028, 121366]  # %ile, rank
-#             },
-#             "Home University Seats Allotted to Other Than Home University Candidates": {
-#                 "GOPENH": [9.7383065, 137370]
-#             }
-#         }
-#     }
-# }
-
 skippedPages = []
 
 for pageNO, page in enumerate(reader.pages):
-    # if pageNO!=0: continue
     complete_page_text = page.extract_text()
     # if "II" in complete_page_text:
     #     skippedPages.append([pageNO, complete_page_text])
