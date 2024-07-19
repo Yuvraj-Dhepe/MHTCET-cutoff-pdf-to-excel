@@ -34,3 +34,11 @@ pip3 install pdfplumber openpyxl
    ```
 
 Feel free to contribute or report issues on GitHub!
+
+## Sample Data and Output
+
+The `out` folder in this repository contains the following files:
+
+1. **Sample PDF (2023 CET CAP Round 1 Cut-off):** You can find the raw PDF file containing MHT CET college and branch cutoffs for the 2023 CAP Round 1. This is the input file that the Python program processes.
+
+2. **Final Output (output.xlsx):** After running the `main.py` script and executing the data extraction process, the program generates an Excel file named `output.xlsx`. This file contains organized and structured cutoff data for colleges and branches.
