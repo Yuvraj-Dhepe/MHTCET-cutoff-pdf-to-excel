@@ -14,7 +14,7 @@ This Python project scrapes raw PDF data containing MHT CET college and branch c
 ```bash
 sudo apt-get update
 sudo apt-get install python3-pip
-pip3 install pdfplumber openpyxl
+pip3 install pypdf openpyxl
 ```
 
 ### Windows
@@ -22,7 +22,7 @@ pip3 install pdfplumber openpyxl
 2. Open a command prompt (cmd) or PowerShell.
 3. Run the following commands:
    ```bash
-   pip install pdfplumber openpyxl
+   pip install pypdf openpyxl
    ```
 
 ### macOS
@@ -30,7 +30,7 @@ pip3 install pdfplumber openpyxl
 2. Open Terminal.
 3. Run the following commands:
    ```bash
-   pip3 install pdfplumber openpyxl
+   pip3 install pypdf openpyxl
    ```
 
 Feel free to contribute or report issues on GitHub!
