@@ -96,6 +96,7 @@ for pageNO, page in enumerate(reader.pages):
 with open("data.json", "w") as outfile:
     outfile.write(json.dumps(alldata, indent=4))
 
+os.makedirs("skipped", exist_ok=True)
 for pageNo, page in skippedPages:
     with open(f"skipped/{pageNo+1}.txt", "w") as outfile:
         outfile.write(page)
