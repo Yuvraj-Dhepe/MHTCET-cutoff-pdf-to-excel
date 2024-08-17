@@ -39,14 +39,14 @@ for pageNO, page in enumerate(reader.pages):
         elif line in ['D', 'i'] or "Cut Off List for Maharashtra" in line or "State Common Entrance Tes" in line or "Degree Courses In Engineering and Technology" in line:
             continue
     
-        elif re.match(r'^\d{4}(?!\d{2})', line) and line[:4]+" - " in line:
+        elif line[:5]+" - " in line:
             currents["college_name"] = line
             if line not in alldata: alldata[line] = {}
 
-        elif re.match(r'^\d{9}', line):
+        elif re.match(r'^\d{10}', line):
             if line not in alldata[currents["college_name"]]: alldata[currents["college_name"]][line] = {}
             currents["branch"] = line
-            
+                        
             line = complete_page_text[lineNo]
             lineNo += 1
             if "Status: " in line: 
